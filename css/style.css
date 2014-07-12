@@ -1,0 +1,78 @@
+@import url("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css");
+.SecondaryColor{
+	background:		transparent;
+	border:			0px;
+	background:		#7fba00;
+}
+.ContentSectionHeader a:hover, .ContentSectionBody a:hover, .ContentSectionHeader a:visited, .StandardColor.ui-widget-content a, .StandardColor.ui-widget-content a:visited{
+	text-decoration:		none;
+	color:					#7fba00;
+}
+/* Make other links not green */
+.ProducerTable a span span, #infoTabs ul li a, div.tabs ul.ui-tabs-nav li a span{
+	color:		#575757;
+}
+html body div#content{
+	width:		800px;
+	padding:	10px;
+}
+div.ContentSectionHeader.ui-widget-header
+ { 
+	border: medium none; 
+	background: none repeat scroll 0 0 transparent; 
+	color: #fff;
+	/*font-weight: inherit;*/ 
+}
+body, td, p
+{
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: small;
+}
+a img 
+{
+    border: none;
+}
+.ProducerTable
+{
+	width: 100%;
+}
+.ContentSection
+{
+	margin: 3px 0px 1px 0px;
+	padding: 2px;
+}
+.ContentSectionHeader
+{
+	padding: 7px 10px 10px 10px;
+}
+.ContentSectionBody
+{
+	padding: 10px;
+}
+#ContectSectionSeparator
+{
+	height: 20px;
+}
+
+#ContentSectionNext
+{
+	text-align: right;
+}
+
+#ContentSectionTable
+{
+	width: 100%;
+	border-spacing: 0px;
+}
+
+#ContenSectionCenter
+{
+	margin-left:25%; 
+    margin-right:25%;
+}
+
+#center{
+	width: 800px ;
+	margin-left: auto ;
+	margin-right: auto ;
+}
