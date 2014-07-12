@@ -11,7 +11,7 @@
         #meme-gen{
             text-align: center;
             background: gainsboro;
-            width: 600px;
+            width: 800px;
             border: 1px solid black;
         }
         .insertText{
@@ -54,17 +54,19 @@
                 <!-- form #1 -->
                 <form method = "post" action="mailto:viaandrew@gmail.com" id = "textbox">
                     <div class = "insertText">
+                        <input type="file" name="uploadField" />
+                        <br /><br />
+                        <span style="font-family:sans-serif">or insert image URL:</span><input type="text" name="Image Link">
+                        <br /><br />
+                        <input type="submit" value="Process Image">
+                        <br /><br />
                         <input type="text" class= "text_input" id="text0" name="text0" placeholder="Insert Top Text" autocomplete="off" />
                         <br /><br />
                         <input type="text" class= "text_input" id="text1" name="text1" placeholder="Insert Bottom Text" autocomplete="off" />
                         <br /><br />
-                            <input type="file" name="uploadField" />
-                        <br /><br />
-                        <!-- disable -->
                         <button id="submit-text" class="buttons" type="submit">
                             <span style="color: #00008b"><b> Submit Text </b></span>
                         </button>
-
                     </div>
                 </form>
                 <!-- form #2 -->
