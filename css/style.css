@@ -1,4 +1,4 @@
-@import url("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css");
+
 .SecondaryColor{
 	background:		transparent;
 	border:			0px;
@@ -75,4 +75,10 @@ a img
 	width: 800px ;
 	margin-left: auto ;
 	margin-right: auto ;
+}
+
+.ui-widget-content {
+	border: 1px solid #aaaaaa;
+	background: #ffffff 50% 50% repeat-x;
+	color: #222222;
 }
