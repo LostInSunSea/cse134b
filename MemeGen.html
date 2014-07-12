@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- internal ss -->
+    <style>
+        body{
+            background-color: lightgrey;
+            padding-left: 350px;
+        }
+        #meme-gen{
+            text-align: center;
+            background: gainsboro;
+            width: 600px;
+            border: 1px solid black;
+        }
+        .insertText{
+            text-align: center;
+        }
+        .thumbnail-img{
+            text-align: center;
+        }
+        h1{
+            font-family: cursive;
+            font-size: 25pt;
+            padding-left: 300px;
+        }
+        #submit-text{
+            text-align: center;
+            width: 110px;
+            height: 50px;
+            font-size: 11pt;
+            padding: 10px;
+        }
+        .text_input{
+            text-align: center;
+            width: 300px;
+            height: 30px;
+            font-size: 14pt;
+        }
+    </style>
+    <title>Meme Generator</title>
+</head>
+<body>
+    <h1> Meme Generator </h1>
+    <table id="meme-gen">
+        <tr>
+            <td>
+                <div class="thumbnail-img">
+                    <img src="http://placehold.it/500x300&amp;text=Insert+Meme" alt="Insert Meme">
+                </div>
+            </td>
+            <td>
+                <!-- form #1 -->
+                <form method = "post" action="mailto:viaandrew@gmail.com" id = "textbox">
+                    <div class = "insertText">
+                        <input type="text" class= "text_input" id="text0" name="text0" placeholder="Insert Top Text" autocomplete="off" />
+                        <br /><br />
+                        <input type="text" class= "text_input" id="text1" name="text1" placeholder="Insert Bottom Text" autocomplete="off" />
+                        <br /><br />
+                            <input type="file" name="uploadField" />
+                        <br /><br />
+                        <!-- disable -->
+                        <button id="submit-text" class="buttons" type="submit">
+                            <span style="color: #00008b"><b> Submit Text </b></span>
+                        </button>
+
+                    </div>
+                </form>
+                <!-- form #2 -->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
