@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Big Picture</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<style>	
+		figure {
+			border: 31px solid black;
+			background: #cd44cf;
+			height: 400px;
+			width: 800px;
+		}
+	
+		h2 {
+			padding: 0px 0px 0px 40px;
+		}
+		
+		
+		#picInfo {
+			padding: 0px 0px 0px 40px;
+			width: 800px;
+		}
+		
+		p.id {
+			width: 880px;
+		}
+		
+		#comment {
+			padding-left: 30px;
+		}
+		
+		body {
+			word-wrap: break-word;
+		}
+		
+	</style>
+	<script src="Header.js"></script>
+	<script type="text/javascript">
+	var oldComment = null;
+	
+	function editComment() {
+		oldComment = document.getElementById("comment").innerHTML; //Save original comment
+		document.getElementById("comment").innerHTML = "<textarea id=\"textarea\">" + oldComment + "</textarea>"; //Add an editable text area with the original comment
+		document.getElementById("edit_submit").innerHTML = "Submit"; //Rename button to Submit
+		document.getElementById("edit_submit").onclick = submitEdit;
+		document.getElementById("cancel").hidden = false; //show Cancel button
+	}
+	
+	function addComment() {
+		document.getElementById("comment").innerHTML = "<textarea id=\"textarea\"></textarea>"; //Add an editable text area with the original comment
+		document.getElementById("edit_submit").innerHTML = "Submit"; //Rename button to Submit
+		document.getElementById("edit_submit").onclick = submitEdit;
+		document.getElementById("cancel").hidden = false; //show Cancel button
+	}
+	
+	function submitEdit() {
+		document.getElementById("cancel").hidden = true; //hide Cancel button
+		document.getElementById("comment").innerHTML = document.getElementById("textarea").value;
+		document.getElementById("edit_submit").innerHTML = "Edit"; //Rename button to Edit
+		document.getElementById("edit_submit").onclick = editComment; //Have button run the editComment function
+	}
+	
+	function cancelEdit() {
+		document.getElementById("cancel").hidden = true; //hide Cancel button
+		document.getElementById("edit_submit").innerHTML = "Edit"; //Rename button to Edit
+		document.getElementById("edit_submit").onclick = editComment; //Have button run the editComment function
+		document.getElementById("comment").innerHTML = oldComment;
+		oldComment = null; //Cleast oldComment value
+	}
+	</script>
+</head>
+<body>
+	<header>
+		<div id="navBar"></div>
+		<h2>Picture's Title</h2>
+	</header>
+	<main>
+		<figure>Pic goes here</figure>
+		<div id="picInfo">
+		Source Information:
+		<ul>
+			<li> URL of original picture: <a href="http://google.com/">http://google.com/images</a></li>
+			<li> Date of retrieval: <time datetime="2013-12-31T18:00-08:00">2013-12-31 at 18:00(PST)</time></li>
+		</ul>
+		<p id="tags">Tags: <a href="http://google.com">&#60;cat&#62;</a> <a href="http://google.com">&#60;flying&#62;</a> <a href="http://google.com">&#60;brown&#62;</a></p>
+		<p id="rating">Rating: 3 out of 5</p>
+		Comment:
+		<div id="comment"></div>
+		<button id="edit_submit" type="button" onclick="addComment()">Add</button>
+		<button id="cancel" type="button" hidden onclick="cancelEdit()">Cancel</button>
+		</div>
+	</main>
+</body>
+
+</html>
