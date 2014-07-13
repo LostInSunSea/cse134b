@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+
+
+<head>
+<meta charset="UTF-8">
+<title>NavBar</title>
+
+<style>
+
+    ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li 
+    {
+        display: inline;
+    }   
+
+    table
+    {
+        width: ="700"; 
+        border="1";
+        cellpadding="5"
+    }
+
+	
+
+</style>
+
+</head>
+
+<body>
+
+    <header id="main-header">
+
+    <h1 id="logo"><a href="#">Megalomemia</a></h1>
+
+    <form name="searchbar" method="get">
+      <table>
+        <tr>
+        <td>
+            <input type="hidden" name="dff_view" value="grid">
+            Search:<input type="text" name="dff_keyword" size="25" maxlength="50"> by 
+            <select name="dff_cat1num" size="1">
+            <option value="-1">All
+            <option value="-2">--------------
+            <option value="101">Tags
+            <option value="193">Comments
+            <option value="2546">Name
+            </select>
+            <input type="submit" value="Find">
+        </td>
+        </tr>
+     </table>
+    </form>
+        <nav id="main-nav">
+            <ul>
+              <li><a href="#" class="current">Home</a></li>
+              <li><a href="#">My Albums</a></li>
+              <li><a href="#">Tags Page </a></li>
+              <li><a href="#">Add Meme</a></li>
+              <li><a href="#">Meme Generator</a></li>
+              <li><a href="#">Group Page</a></li>
+            </ul>
+        </nav>            
+    </header>
+    
+    
+    
+    
+    <header id="add-header">
+    
+    	<b> Add an image URL or choose file </b>
+    	<input type="text" name="URL input"/> 
+    	<input type="file" name="uploadField" />
+
+		
+		
+		 <div class="row">
+    <div class="small-12 columns">
+      <ul class="small-block-grid-2 large-block-grid-3">
+        <li><img src="http://placehold.it/290x410&text=current+picture+1"></li>
+
+      </ul>
+    </div>
+    
+    </header>
+</body>
