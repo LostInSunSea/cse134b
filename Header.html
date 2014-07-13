@@ -1,68 +1,37 @@
 <!DOCTYPE HTML>
 <html>
-
-
-
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>NavBar</title>
-
-<style>
-    ul
-    {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li 
-    {
-        display: inline;
-    }   
-
-    table
-    {
-        width: 700px; 
-        border: 1px;
-    }
-</style>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>NavBar</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
 
-    <header id="main-header">
-
-    <h1 id="logo"><a href="#">Megalomemia</a></h1>
-
-    <form name="searchbar" method="get">
-      <table>
-        <tr>
-        <td>
-            <input type="hidden" name="dff_view" value="grid">
-            Search:<input type="text" name="dff_keyword" size="25" maxlength="50"> by 
-            <select name="dff_cat1num" size="1">
-            <option value="-1">All
-            <option value="-2">--------------
-            <option value="101">Tags
-            <option value="193">Comments
-            <option value="2546">Name
-            </select>
-            <input type="submit" value="Find">
-        </td>
-        </tr>
-     </table>
-    </form>
-
-        <nav id="main-nav">
-            <ul>
-              <li><a href="#" class="current">Home</a></li>
-              <li><a href="#">My Albums</a></li>
-              <li><a href="#">Tags Page </a></li>
-              <li><a href="#">Add Meme</a></li>
-              <li><a href="#">Meme Generator</a></li>
-              <li><a href="#">Group Page</a></li>
-            </ul>
-        </nav>            
-    </header>
+    <header>
+    	<!-- Copy this part and put it into your header -->
+		<a href="./index.html"><img src="./images/logo.png" alt="Megalomemia"></a>
+	    <form name="searchbar" method="get">
+			<input type="hidden" name="dff_view" value="grid">
+			Search:<input type="text" name="dff_keyword" size="25" maxlength="50"> by 
+			<select name="dff_cat1num" size="1">
+			<option value="0">All
+			<option value="1">Tags
+			<option value="2">Comments
+			<option value="3">Title
+			</select>
+			<input type="submit" value="Find">
+	    </form>
+        <nav>
+			<a href="./index.html" class="current">Home</a>
+			<a href="./Albums.html">My Albums</a>
+			<a href="./Tags.html">Tags Page </a>
+			<a href="./AddMeme.html">Add Meme</a>
+			<a href="./MemeGen.html">Meme Generator</a>
+			<a href="./GroupPage.html">Group Page</a>
+        </nav>
+        <!-- Stop here -->
+  	</header>        
 </body>

@@ -6,7 +6,7 @@
 }
 .ContentSectionHeader a:hover, .ContentSectionBody a:hover, .ContentSectionHeader a:visited, .StandardColor.ui-widget-content a, .StandardColor.ui-widget-content a:visited{
 	text-decoration:		none;
-	color:					#7fba00;
+	color:					#476900;
 }
 /* Make other links not green */
 .ProducerTable a span span, #infoTabs ul li a, div.tabs ul.ui-tabs-nav li a span{
@@ -81,4 +81,26 @@ a img
 	border: 1px solid #aaaaaa;
 	background: #ffffff 50% 50% repeat-x;
 	color: #222222;
+}
+
+/* This next code controls the navigation header. */
+header img {
+	float: left;
+	margin-bottom: 0px;
+}
+
+header form {	
+	padding:18px 0px 0px 210px;
+}
+
+header nav {
+	padding:9px 0px 0px 5px;
+}
+	    
+header nav a {
+	padding-right: 15px;
+}
+
+header {
+	padding-bottom: 20px;
 }
